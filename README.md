@@ -11,7 +11,7 @@
 - .acss(css)
 - .js(交互逻辑处理)
 - .json(配置 title、背景)
-- view 标签(div、span)
+- block、view 标签(div、span)
 - dd 全局变量(window)
 
 # 自带的 ui 组件
@@ -37,4 +37,5 @@
 # 局限性
 
 - 不支持直接的 dom 操作,很多开源 web 组件不能直接移植
+- [节点查询](https://open-doc.dingtalk.com/microapp/dev/selector-query)
 - [开发自定义组件](https://open-doc.dingtalk.com/microapp/dev/custom-component-overview)
