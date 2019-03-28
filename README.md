@@ -24,6 +24,12 @@
 
 # [ajax](https://open-doc.dingtalk.com/microapp/dev/httprequest)
 
+#[图片、文件]
+
+# 缓存
+
+# 调用系统功能(查看系统信息、网络状态、扫码、蓝牙、震动、电话)
+
 # 免登录(https://open-doc.dingtalk.com/microapp/dev/wcoaey)
 
 # [开发、发布](https://oa.dingtalk.com/#/login)
