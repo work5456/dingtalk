@@ -6,6 +6,44 @@
 - [后端 api](https://open-doc.dingtalk.com/microapp/serverapi3)
 - [钉钉管理后台](https://oa.dingtalk.com/#/login)
 
+# 自带的 ui 组件
+
+- [表单元素](https://open-doc.dingtalk.com/microapp/dev/button-component)
+- [操作反馈(toast、loading、modal、actionsheet)](https://open-doc.dingtalk.com/microapp/dev/ui-feedback)
+
+```js
+dd.showToast({
+  type: 'success',
+  content: '操作成功',
+  duration: 3000,
+  success: () => {
+    dd.alert({
+      title: 'toast 消失了'
+    })
+  }
+})
+```
+
+- 地图组件(高德地图)
+
+```js
+"tabBar": {
+    "textColor": "#404040",
+    "selectedColor": "#108ee9",
+    "backgroundColor": "#F5F5F9",
+    "items": [
+      {
+        "pagePath": "pages/index/index",
+        "name": "index"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "name": "地图"
+      }
+    ]
+  }
+```
+
 # 与 web 开发类比
 
 - [概述](https://open-doc.dingtalk.com/microapp/dev/framework-overview)
@@ -17,21 +55,41 @@
 - view 标签(div、span)
 - dd 全局变量(window)
 
-# 自带的 ui 组件
-
-- 表单元素
-- 操作反馈(toast、loading、modal、actionsheet)
-- 地图组件(高德地图)
-
 # [事件](https://open-doc.dingtalk.com/microapp/dev/events)
 
 # [ajax](https://open-doc.dingtalk.com/microapp/dev/httprequest)
 
-# [图片、文件]
+```js
+dd.httpRequest({
+  url: 'http://httpbin.org/post',
+  method: 'POST',
+  data: {
+    from: '钉钉',
+    production: 'Dingtalk'
+  },
+  dataType: 'json',
+  success: function(res) {
+    dd.alert({ content: 'success' })
+  },
+  fail: function(res) {
+    dd.alert({ content: 'fail' })
+  },
+  complete: function(res) {
+    dd.hideLoading()
+    dd.alert({ content: 'complete' })
+  }
+})
+```
+
+# [文件上传下载](https://open-doc.dingtalk.com/microapp/dev/network)
+
+# [图片](https://open-doc.dingtalk.com/microapp/dev/media-image)
 
 # 缓存
 
 # 调用系统功能(查看系统信息、网络状态、扫码、蓝牙、震动、电话)
+
+# [位置](https://open-doc.dingtalk.com/microapp/dev/location)
 
 # [免登录](https://open-doc.dingtalk.com/microapp/dev/wcoaey)
 
