@@ -85,9 +85,9 @@ dd.httpRequest({
 
 # [图片](https://open-doc.dingtalk.com/microapp/dev/media-image)
 
-# 缓存
+# [缓存(localstorage)](https://open-doc.dingtalk.com/microapp/dev/storage)
 
-# 调用系统功能(查看系统信息、网络状态、扫码、蓝牙、震动、电话)
+# [调用系统功能(查看系统信息、网络状态、扫码、蓝牙、震动、电话)](https://open-doc.dingtalk.com/microapp/dev/system-info)
 
 # [位置](https://open-doc.dingtalk.com/microapp/dev/location)
 
